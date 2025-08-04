@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduProject - The complete project management platform built for universities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">EduProject</span>
+                        <span class="logo-symbol">®</span>
+                    </a>
+                </div>
+                <ul class="main-nav-links">
+                    <li class="dropdown">
+                        <a href="platform.html">Platform <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="platform.html#projects">Project Management</a>
+                            <a href="platform.html#collaboration">Team Collaboration</a>
+                            <a href="platform.html#workflows">Academic Workflows</a>
+                            <a href="platform.html#analytics">Progress Analytics</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="integrations.html">Integrations <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="integrations.html#lms">Learning Management</a>
+                            <a href="integrations.html#sis">Student Information</a>
+                            <a href="integrations.html#tools">Academic Tools</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="resources.html">Resources <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="resources.html#guides">Implementation Guides</a>
+                            <a href="resources.html#cases">Case Studies</a>
+                            <a href="resources.html#webinars">Webinars</a>
+                            <a href="resources.html#support">Academic Support</a>
+                        </div>
+                    </li>
+                    <li><a href="how-it-works.html">How it works</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <button class="btn btn-primary" onclick="window.location.href='signup.html'">Start free trial</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='contact.html'">Request demo</button>
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Notification Banner -->
+    <div class="notification-banner">
+        <div class="container">
+            <span>New: AI-powered project recommendations for better academic outcomes</span>
+            <button class="close-btn" onclick="closeBanner()">✕</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-intro">INTRODUCING</p>
+                    <h1 class="hero-title">The complete project management platform built for universities</h1>
+                    <p class="hero-description">
+                        Transform academic collaboration. EduProject empowers students, faculty, and administrators to manage projects seamlessly—from course assignments to groundbreaking research initiatives.
+                    </p>
+                    <form class="signup-form">
+                        <input type="email" placeholder="University email address" class="email-input">
+                        <button type="submit" class="btn btn-primary">Start free trial</button>
+                    </form>
+                </div>
+                <div class="hero-visual">
+                    <div class="dashboard-collage">
+                        <div class="dashboard-item dashboard-1"></div>
+                        <div class="dashboard-item dashboard-2"></div>
+                        <div class="dashboard-item dashboard-3"></div>
+                        <div class="dashboard-item dashboard-4"></div>
+                        <div class="dashboard-item dashboard-5"></div>
+                        <div class="dashboard-item dashboard-6"></div>
+                        <div class="dashboard-item dashboard-7"></div>
+                        <div class="dashboard-item dashboard-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <h2 class="stats-title">Trusted by 450+ universities worldwide</h2>
+        </div>
+    </section>
+
+    <!-- University Logos -->
+    <section class="brands">
+        <div class="container">
+            <div class="brand-logos">
+                <div class="brand-logo">HARVARD</div>
+                <div class="brand-logo">MIT</div>
+                <div class="brand-logo">STANFORD</div>
+                <div class="brand-logo">UC BERKELEY</div>
+                <div class="brand-logo">OXFORD</div>
+                <div class="brand-logo">CAMBRIDGE</div>
+                <div class="brand-logo">CALTECH</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Everything you need for academic project success</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Project Management</h3>
+                    <p>Organize course projects, research initiatives, and academic collaborations with powerful project management tools designed for education.</p>
+                    <a href="platform.html#projects" class="feature-link">Learn more →</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Team Collaboration</h3>
+                    <p>Enable seamless collaboration between students, faculty, and researchers with real-time communication and file sharing.</p>
+                    <a href="platform.html#collaboration" class="feature-link">Learn more →</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Academic Workflows</h3>
+                    <p>Automate grading workflows, project approvals, and academic processes to save time and improve efficiency.</p>
+                    <a href="platform.html#workflows" class="feature-link">Learn more →</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Progress Analytics</h3>
+                    <p>Track student progress, project milestones, and academic outcomes with comprehensive analytics and reporting.</p>
+                    <a href="platform.html#analytics" class="feature-link">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How EduProject transforms academic collaboration</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Connect your systems</h3>
+                    <p>Integrate with your LMS, student information system, and existing academic tools for seamless data flow.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Create project teams</h3>
+                    <p>Form student groups, assign faculty advisors, and set up collaborative workspaces for each project.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Manage and track progress</h3>
+                    <p>Monitor project milestones, provide feedback, and ensure academic objectives are met on time.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Analyze and improve</h3>
+                    <p>Use analytics to understand project outcomes and continuously improve academic processes.</p>
+                </div>
+            </div>
+            <div class="cta-center">
+                <a href="how-it-works.html" class="btn btn-primary">See how it works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What educators are saying</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"EduProject has revolutionized how our students collaborate on research projects. Project completion rates increased by 85%."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Dr. Sarah Chen</strong>
+                        <span>Professor of Computer Science, Stanford University</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The integration with our LMS made implementation seamless. Faculty adoption was immediate and enthusiastic."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Prof. Michael Rodriguez</strong>
+                        <span>Dean of Engineering, MIT</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Best investment we've made in educational technology. Student engagement and project quality have dramatically improved."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Dr. Emily Watson</strong>
+                        <span>Director of Academic Innovation, Harvard University</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases">
+        <div class="container">
+            <h2 class="section-title">Perfect for every academic scenario</h2>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-icon">🎓</div>
+                    <h3>Course Projects</h3>
+                    <p>Manage semester-long projects, group assignments, and collaborative coursework with integrated grading and feedback systems.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🔬</div>
+                    <h3>Research Initiatives</h3>
+                    <p>Coordinate complex research projects, manage lab collaborations, and track publication milestones across departments.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">📚</div>
+                    <h3>Thesis Management</h3>
+                    <p>Support graduate students through thesis development with advisor collaboration, milestone tracking, and progress monitoring.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🌐</div>
+                    <h3>Cross-Department Collaboration</h3>
+                    <p>Enable interdisciplinary projects that span multiple departments, faculties, and even partner institutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to transform your university's project management?</h2>
+                <p>Join hundreds of universities using EduProject to enhance academic collaboration and student success.</p>
+                <div class="cta-buttons">
+                    <a href="signup.html" class="btn btn-primary btn-large">Start free trial</a>
+                    <a href="contact.html" class="btn btn-secondary btn-large">Request demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="platform.html#projects">Project Management</a></li>
+                        <li><a href="platform.html#collaboration">Team Collaboration</a></li>
+                        <li><a href="platform.html#workflows">Academic Workflows</a></li>
+                        <li><a href="platform.html#analytics">Progress Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Integrations</h4>
+                    <ul>
+                        <li><a href="integrations.html#canvas">Canvas</a></li>
+                        <li><a href="integrations.html#blackboard">Blackboard</a></li>
+                        <li><a href="integrations.html#moodle">Moodle</a></li>
+                        <li><a href="integrations.html#api">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources.html#guides">Implementation Guides</a></li>
+                        <li><a href="resources.html#cases">Case Studies</a></li>
+                        <li><a href="resources.html#webinars">Webinars</a></li>
+                        <li><a href="help.html">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>University</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="404.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="404.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <span class="logo-text">EduProject</span>
+                    <span class="logo-symbol">®</span>
+                </div>
+                <p>&copy; 2024 EduProject. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
