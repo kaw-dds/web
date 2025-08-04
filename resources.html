@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - EduProject</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">EduProject</span>
+                        <span class="logo-symbol">®</span>
+                    </a>
+                </div>
+                <ul class="main-nav-links">
+                    <li class="dropdown">
+                        <a href="platform.html">Platform <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="platform.html#projects">Project Management</a>
+                            <a href="platform.html#collaboration">Team Collaboration</a>
+                            <a href="platform.html#workflows">Academic Workflows</a>
+                            <a href="platform.html#analytics">Progress Analytics</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="integrations.html">Integrations <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="integrations.html#lms">Learning Management</a>
+                            <a href="integrations.html#sis">Student Information</a>
+                            <a href="integrations.html#tools">Academic Tools</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="resources.html">Resources <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="resources.html#guides">Implementation Guides</a>
+                            <a href="resources.html#cases">Case Studies</a>
+                            <a href="resources.html#webinars">Webinars</a>
+                            <a href="resources.html#support">Academic Support</a>
+                        </div>
+                    </li>
+                    <li><a href="how-it-works.html">How it works</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <button class="btn btn-primary" onclick="window.location.href='signup.html'">Start free trial</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='contact.html'">Request demo</button>
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Resources Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Academic resources and support</h1>
+                <p>Everything you need to successfully implement and optimize EduProject at your university.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="resource-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" onclick="showResourceCategory('guides')">Implementation Guides</button>
+                <button class="tab-btn" onclick="showResourceCategory('cases')">Case Studies</button>
+                <button class="tab-btn" onclick="showResourceCategory('webinars')">Webinars</button>
+                <button class="tab-btn" onclick="showResourceCategory('support')">Academic Support</button>
+            </div>
+
+            <div class="category-content" id="guides">
+                <h2>Implementation Guides</h2>
+                <p>Step-by-step guides to help you successfully deploy EduProject across your university.</p>
+                <div class="guides-grid">
+                    <div class="guide-card">
+                        <div class="guide-icon">🚀</div>
+                        <h3>Getting Started Guide</h3>
+                        <p>Complete walkthrough for setting up EduProject, from initial configuration to first project launch.</p>
+                        <a href="#" class="btn btn-secondary">Download PDF</a>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-icon">🔗</div>
+                        <h3>LMS Integration Manual</h3>
+                        <p>Detailed instructions for integrating with Canvas, Blackboard, Moodle, and other learning management systems.</p>
+                        <a href="#" class="btn btn-secondary">View guide</a>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-icon">👨‍🏫</div>
+                        <h3>Faculty Training Toolkit</h3>
+                        <p>Comprehensive training materials, presentation slides, and resources for faculty onboarding.</p>
+                        <a href="#" class="btn btn-secondary">Access toolkit</a>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-icon">🎓</div>
+                        <h3>Student Onboarding Kit</h3>
+                        <p>Ready-to-use materials for introducing students to EduProject and collaborative project management.</p>
+                        <a href="#" class="btn btn-secondary">Download kit</a>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-icon">📊</div>
+                        <h3>Analytics & Reporting Guide</h3>
+                        <p>Learn how to leverage EduProject's analytics to improve academic outcomes and track success metrics.</p>
+                        <a href="#" class="btn btn-secondary">Read guide</a>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-icon">🔧</div>
+                        <h3>Advanced Configuration</h3>
+                        <p>Advanced setup options, custom workflows, and integration with specialized academic tools.</p>
+                        <a href="#" class="btn btn-secondary">View advanced</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-content hidden" id="cases">
+                <h2>University Case Studies</h2>
+                <p>Real success stories from universities that have transformed their academic project management with EduProject.</p>
+                <div class="blog-grid" id="case-studies-list">
+                    <!-- Case studies will be injected here by JavaScript -->
+                </div>
+            </div>
+
+            <div class="category-content hidden" id="webinars">
+                <h2>Academic Webinars & Events</h2>
+                <p>Join our educational webinars and virtual events designed specifically for higher education professionals.</p>
+                <div class="webinars-list" id="webinars-list">
+                    <!-- Webinars will be injected here by JavaScript -->
+                </div>
+            </div>
+
+            <div class="category-content hidden" id="support">
+                <h2>Academic Support</h2>
+                <p>Get the help you need with our comprehensive academic support resources and dedicated team.</p>
+                <div class="support-options">
+                    <div class="support-card">
+                        <div class="support-icon">📚</div>
+                        <h3>Knowledge Base</h3>
+                        <p>Comprehensive documentation, FAQs, and troubleshooting guides specifically for academic environments.</p>
+                        <a href="404.html" class="btn btn-secondary">Browse articles</a>
+                    </div>
+                    <div class="support-card">
+                        <div class="support-icon">💬</div>
+                        <h3>Community Forum</h3>
+                        <p>Connect with other educators, share best practices, and get answers from the EduProject community.</p>
+                        <a href="404.html" class="btn btn-secondary">Join forum</a>
+                    </div>
+                    <div class="support-card">
+                        <div class="support-icon">🎓</div>
+                        <h3>Academic Success Manager</h3>
+                        <p>Dedicated support specialist who understands higher education and can help optimize your implementation.</p>
+                        <a href="404.html" class="btn btn-secondary">Contact ASM</a>
+                    </div>
+                    <div class="support-card">
+                        <div class="support-icon">📞</div>
+                        <h3>Priority Support</h3>
+                        <p>24/7 priority support during critical academic periods like finals, project deadlines, and registration.</p>
+                        <a href="404.html" class="btn btn-secondary">Get support</a>
+                    </div>
+                    <div class="support-card">
+                        <div class="support-icon">🔧</div>
+                        <h3>Technical Services</h3>
+                        <p>Expert technical team for custom integrations, data migration, and advanced configuration needs.</p>
+                        <a href="404.html" class="btn btn-secondary">Request service</a>
+                    </div>
+                    <div class="support-card">
+                        <div class="support-icon">📖</div>
+                        <h3>Training Programs</h3>
+                        <p>Comprehensive training programs for faculty, staff, and students with certification options.</p>
+                        <a href="404.html" class="btn btn-secondary">View programs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-signup">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay updated with academic insights</h2>
+                <p>Get the latest resources, case studies, and best practices delivered to your inbox monthly.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your university email" class="newsletter-input">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="platform.html#projects">Project Management</a></li>
+                        <li><a href="platform.html#collaboration">Team Collaboration</a></li>
+                        <li><a href="platform.html#workflows">Academic Workflows</a></li>
+                        <li><a href="platform.html#analytics">Progress Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Integrations</h4>
+                    <ul>
+                        <li><a href="integrations.html#canvas">Canvas</a></li>
+                        <li><a href="integrations.html#blackboard">Blackboard</a></li>
+                        <li><a href="integrations.html#moodle">Moodle</a></li>
+                        <li><a href="integrations.html#api">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources.html#guides">Implementation Guides</a></li>
+                        <li><a href="resources.html#cases">Case Studies</a></li>
+                        <li><a href="resources.html#webinars">Webinars</a></li>
+                        <li><a href="help.html">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>University</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <span class="logo-text">EduProject</span>
+                    <span class="logo-symbol">®</span>
+                </div>
+                <p>&copy; 2024 EduProject. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
