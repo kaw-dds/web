@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary-orange: #FF6B35;
+            --light-orange: #FF8A65;
+            --dark-orange: #E55A2A;
+            --white: #FFFFFF;
+            --light-gray: #F8F9FA;
+            --dark-gray: #343A40;
+            --medium-gray: #6C757D;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--white);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        header h1 {
+            color: var(--primary-orange);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        header p {
+            color: var(--medium-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        @media (min-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .contact-form {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--dark-gray);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-orange);
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.2);
+        }
+        
+        .submit-btn {
+            background-color: var(--primary-orange);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background-color: var(--dark-orange);
+        }
+        
+        .contact-info {
+            background-color: var(--primary-orange);
+            color: var(--white);
+            border-radius: 10px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .contact-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .info-icon {
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .info-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">EduProject</span>
+                        <span class="logo-symbol">®</span>
+                    </a>
+                </div>
+                <ul class="main-nav-links">
+                    <li class="dropdown">
+                        <a href="platform.html">Platform <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="platform.html#projects">Project Management</a>
+                            <a href="platform.html#collaboration">Team Collaboration</a>
+                            <a href="platform.html#workflows">Academic Workflows</a>
+                            <a href="platform.html#analytics">Progress Analytics</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="integrations.html">Integrations <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="integrations.html#lms">Learning Management</a>
+                            <a href="integrations.html#sis">Student Information</a>
+                            <a href="integrations.html#tools">Academic Tools</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="resources.html">Resources <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="resources.html#guides">Implementation Guides</a>
+                            <a href="resources.html#cases">Case Studies</a>
+                            <a href="resources.html#webinars">Webinars</a>
+                            <a href="resources.html#support">Academic Support</a>
+                        </div>
+                    </li>
+                    <li><a href="how-it-works.html">How it works</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <button class="btn btn-primary" onclick="window.location.href='signup.html'">Start free trial</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='demo.html'">Request demo</button>
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you. Please fill out this form or use our contact information below.</p>
+        </header>
+        
+        <div class="contact-container">
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <span>📍</span>
+                    </div>
+                    <div class="info-content">
+                        <h3>Our Location</h3>
+                        <p>123 Campus Avenue, University City, ST 12345</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <span>📞</span>
+                    </div>
+                    <div class="info-content">
+                        <h3>Phone Number</h3>
+                        <p>(123) 456-7890</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <span>✉️</span>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email Address</h3>
+                        <p>info@campusprojects.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <span>🕒</span>
+                    </div>
+                    <div class="info-content">
+                        <h3>Business Hours</h3>
+                        <p>Monday-Friday: 9am-5pm<br>Saturday: 10am-2pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2023 Campus Project Management System. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
