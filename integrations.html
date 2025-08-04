@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrations - EduProject</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">EduProject</span>
+                        <span class="logo-symbol">®</span>
+                    </a>
+                </div>
+                <ul class="main-nav-links">
+                    <li class="dropdown">
+                        <a href="platform.html">Platform <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="platform.html#projects">Project Management</a>
+                            <a href="platform.html#collaboration">Team Collaboration</a>
+                            <a href="platform.html#workflows">Academic Workflows</a>
+                            <a href="platform.html#analytics">Progress Analytics</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="integrations.html">Integrations <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="integrations.html#lms">Learning Management</a>
+                            <a href="integrations.html#sis">Student Information</a>
+                            <a href="integrations.html#tools">Academic Tools</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="resources.html">Resources <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="resources.html#guides">Implementation Guides</a>
+                            <a href="resources.html#cases">Case Studies</a>
+                            <a href="resources.html#webinars">Webinars</a>
+                            <a href="resources.html#support">Academic Support</a>
+                        </div>
+                    </li>
+                    <li><a href="how-it-works.html">How it works</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <button class="btn btn-primary" onclick="window.location.href='signup.html'">Start free trial</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='demo.html'">Request demo</button>
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Integrations Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>150+ academic integrations</h1>
+                <p>Connect EduProject with your existing university systems and tools to create a seamless academic ecosystem.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Categories -->
+    <section class="integration-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" onclick="showCategory('lms')">Learning Management</button>
+                <button class="tab-btn" onclick="showCategory('sis')">Student Information</button>
+                <button class="tab-btn" onclick="showCategory('tools')">Academic Tools</button>
+                <button class="tab-btn" onclick="showCategory('api')">API & Webhooks</button>
+            </div>
+
+            <div class="category-content" id="lms">
+                <h2>Learning Management Systems</h2>
+                <p>Seamlessly integrate with your LMS for grade passback, roster sync, and unified student experience.</p>
+                <div class="integrations-grid">
+                    <div class="integration-card">
+                        <div class="integration-icon">📚</div>
+                        <h3>Canvas</h3>
+                        <p>Deep integration with Canvas LMS including grade passback, roster sync, and single sign-on.</p>
+                        <a href="#" class="integration-link">Learn more →</a>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-icon">🎓</div>
+                        <h3>Blackboard</h3>
+                        <p>Complete Blackboard integration for seamless project management within your LMS.</p>
+                        <a href="#" class="integration-link">Learn more →</a>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-icon">🏫</div>
+                        <h3>Moodle</h3>
+                        <p>Open-source LMS integration with full project and grade synchronization.</p>
+                        <a href="#" class="integration-link">Learn more →</a>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-icon">📖</div>
+                        <h3>D2L Brightspace</h3>
+                        <p>Comprehensive integration with Desire2Learn for enhanced learning experiences.</p>
+                        <a href="#" class="integration-link">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-content hidden" id="sis">
+                <h2>Student Information Systems</h2>
+                <p>Connect with your SIS for automatic roster management and student data synchronization.</p>
+                <div class="integrations-grid">
+                    <div class="integration-card">
+                        <div class="integration-icon">🏛️</div>
+                        <h3>Banner</h3>
+                        <p>Ellucian Banner integration for comprehensive student information management.</p>
+                        <a href="#" class="integration-link">Learn more →</a>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-icon">📊</div>
+                        <h3>PeopleSoft</h3>
+                        <p>Oracle PeopleSoft Campus Solutions integration for enterprise universities.</p>
+                        <a href="#" class="integration-link">Learn more →</a>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-icon">🔗</div>
+                        <h3>PowerSchool</h3>
+                        <p>PowerSchool SIS integration for K-12 and higher education institutions.</p>
+                        <a href="#" class="integration-link">Learn more →</a>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-icon">📋</div>
+                        <h3>Colleague</h3>
+                        <p>Ellucian Colleague integration for comprehensive academic administration.</p>
+                        <a href="#" class="integration-link">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-content hidden" id="tools">
+                <h2>Academic Tools</h2>
+                <p>Integrate with popular academic and productivity tools used across your campus.</p>
+                <div class="integrations-grid">
+                    <div class="integration-card">
+                        <div class="integration-icon">📝</div>
+                        <h3>Google Workspace</h3>
+                        <p>Full integration with Google Docs, Drive, and Classroom for seamless collaboration.</p>
+                        <a href="#" class="integration-link">Learn more →</a>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-icon">💼</div>
+                        <h3>Microsoft 365</h3>
+                        <p>Connect with Office 365, Teams, and OneDrive for comprehensive productivity.</p>
+                        <a href="#" class="integration-link">Learn more →</a>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-icon">🔬</div>
+                        <h3>Turnitin</h3>
+                        <p>Plagiarism detection and originality checking integrated into project workflows.</p>
+                        <a href="#" class="integration-link">Learn more →</a>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-icon">📹</div>
+                        <h3>Zoom</h3>
+                        <p>Video conferencing integration for virtual project meetings and presentations.</p>
+                        <a href="#" class="integration-link">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-content hidden" id="api">
+                <h2>API & Custom Integrations</h2>
+                <p>Build custom integrations with our comprehensive API and webhook system designed for academic environments.</p>
+                <div class="api-features">
+                    <div class="api-feature">
+                        <h3>RESTful API</h3>
+                        <p>Comprehensive REST API for custom integrations with your university's unique systems and workflows.</p>
+                        <a href="#" class="btn btn-secondary">View documentation</a>
+                    </div>
+                    <div class="api-feature">
+                        <h3>Academic Webhooks</h3>
+                        <p>Real-time notifications for academic events like project submissions, grade updates, and milestone completions.</p>
+                        <a href="#" class="btn btn-secondary">Setup webhooks</a>
+                    </div>
+                    <div class="api-feature">
+                        <h3>Developer Resources</h3>
+                        <p>SDKs, code samples, and comprehensive documentation for building academic integrations.</p>
+                        <a href="#" class="btn btn-secondary">Developer portal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Benefits -->
+    <section class="integration-benefits">
+        <div class="container">
+            <h2 class="section-title">Why integrate with EduProject?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔄</div>
+                    <h3>Seamless Data Flow</h3>
+                    <p>Automatic synchronization between systems eliminates manual data entry and reduces errors.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Single Sign-On</h3>
+                    <p>Students and faculty access all tools with their existing university credentials.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Quick Setup</h3>
+                    <p>Most integrations can be configured in minutes with our guided setup process.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Academic Security</h3>
+                    <p>FERPA-compliant integrations with enterprise-grade security and privacy controls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="platform.html#projects">Project Management</a></li>
+                        <li><a href="platform.html#collaboration">Team Collaboration</a></li>
+                        <li><a href="platform.html#workflows">Academic Workflows</a></li>
+                        <li><a href="platform.html#analytics">Progress Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Integrations</h4>
+                    <ul>
+                        <li><a href="integrations.html#canvas">Canvas</a></li>
+                        <li><a href="integrations.html#blackboard">Blackboard</a></li>
+                        <li><a href="integrations.html#moodle">Moodle</a></li>
+                        <li><a href="integrations.html#api">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources.html#guides">Implementation Guides</a></li>
+                        <li><a href="resources.html#cases">Case Studies</a></li>
+                        <li><a href="resources.html#webinars">Webinars</a></li>
+                        <li><a href="help.html">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>University</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <span class="logo-text">EduProject</span>
+                    <span class="logo-symbol">®</span>
+                </div>
+                <p>&copy; 2024 EduProject. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

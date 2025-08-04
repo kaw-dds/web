@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Your Purchase - EduProject</title>
+    <link rel="stylesheet" href="purchase-styles.css">
+</head>
+<body>
+    <!-- Simplified Header for Purchase Flow -->
+    <header class="purchase-header">
+        <div class="container">
+            <div class="purchase-nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">EduProject</span>
+                        <span class="logo-symbol">®</span>
+                    </a>
+                </div>
+                <div class="purchase-security">
+                    <span class="security-badge">🔒 Secure Checkout</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Purchase Flow -->
+    <section class="purchase-flow">
+        <div class="container">
+            <div class="purchase-container">
+                <!-- Left Side - Plan Summary -->
+                <div class="plan-summary">
+                    <div class="summary-header">
+                        <h2>Order Summary</h2>
+                    </div>
+                    
+                    <div class="selected-plan" id="selected-plan">
+                        <div class="plan-info">
+                            <h3 id="plan-name">Department Plan</h3>
+                            <p id="plan-description">For academic departments</p>
+                            <div class="plan-features">
+                                <ul id="plan-features-list">
+                                    <li>Up to 500 students</li>
+                                    <li>Unlimited projects</li>
+                                    <li>Advanced collaboration</li>
+                                    <li>LMS integration</li>
+                                    <li>Grade passback</li>
+                                    <li>Analytics & reporting</li>
+                                    <li>Priority support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="billing-cycle">
+                            <label class="billing-toggle">
+                                <input type="checkbox" id="annual-billing">
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">Annual billing (Save 25%)</span>
+                            </label>
+                        </div>
+                        
+                        <div class="pricing-breakdown">
+                            <div class="price-line">
+                                <span>Subtotal</span>
+                                <span id="subtotal">$299.00/month</span>
+                            </div>
+                            <div class="price-line discount-line hidden" id="discount-line">
+                                <span>Annual discount (25%)</span>
+                                <span id="discount-amount">-$897.00</span>
+                            </div>
+                            <div class="price-line">
+                                <span>Tax</span>
+                                <span id="tax-amount">$0.00</span>
+                            </div>
+                            <div class="price-line total-line">
+                                <span>Total</span>
+                                <span id="total-amount">$299.00/month</span>
+                            </div>
+                        </div>
+                        
+                        <div class="trial-notice">
+                            <div class="trial-icon">🎓</div>
+                            <div class="trial-text">
+                                <strong>14-day free trial included</strong>
+                                <p>No charges until January 15, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Account & Payment -->
+                <div class="purchase-form">
+                    <div class="form-section">
+                        <h2>University Information</h2>
+                        <form id="purchase-form">
+                            <div class="form-group">
+                                <label for="university-name">University Name *</label>
+                                <input type="text" id="university-name" name="university-name" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="department">Department</label>
+                                    <input type="text" id="department" name="department">
+                                </div>
+                                <div class="form-group">
+                                    <label for="student-count">Estimated Students</label>
+                                    <select id="student-count" name="student-count">
+                                        <option value="50-100">50-100</option>
+                                        <option value="100-250">100-250</option>
+                                        <option value="250-500" selected>250-500</option>
+                                        <option value="500+">500+</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Account Administrator</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">University Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="title">Title/Position</label>
+                            <input type="text" id="title" name="title" placeholder="e.g., Professor, IT Director">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Payment Information</h2>
+                        <div class="payment-methods">
+                            <label class="payment-method active">
+                                <input type="radio" name="payment-method" value="card" checked>
+                                <span class="method-icon">💳</span>
+                                <span>Credit/Debit Card</span>
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="payment-method" value="invoice">
+                                <span class="method-icon">📄</span>
+                                <span>Invoice/Purchase Order</span>
+                            </label>
+                        </div>
+                        
+                        <div class="payment-form" id="card-form">
+                            <div class="form-group">
+                                <label for="card-number">Card Number *</label>
+                                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expiry">Expiry Date *</label>
+                                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV *</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cardholder-name">Cardholder Name *</label>
+                                <input type="text" id="cardholder-name" name="cardholder-name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="payment-form hidden" id="invoice-form">
+                            <div class="invoice-info">
+                                <div class="info-icon">📄</div>
+                                <div class="info-content">
+                                    <h4>Invoice Payment</h4>
+                                    <p>We'll send you an invoice with payment instructions. Net 30 terms available for qualified institutions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="billing-contact">Billing Contact Email</label>
+                                <input type="email" id="billing-contact" name="billing-contact">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="po-number">Purchase Order Number</label>
+                                <input type="text" id="po-number" name="po-number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Billing Address</h2>
+                        <div class="form-group">
+                            <label for="address">Street Address *</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State *</label>
+                                <select id="state" name="state" required>
+                                    <option value="">Select State</option>
+                                    <option value="CA">California</option>
+                                    <option value="NY">New York</option>
+                                    <option value="TX">Texas</option>
+                                    <!-- Add more states -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">ZIP Code *</label>
+                                <input type="text" id="zip" name="zip" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="terms-section">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms-agreement" required>
+                                <span class="checkmark"></span>
+                                <span class="terms-text">
+                                    I agree to the <a href="terms.html" target="_blank">Terms of Service</a> and 
+                                    <a href="privacy.html" target="_blank">Privacy Policy</a>
+                                </span>
+                            </label>
+                            
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="marketing-consent">
+                                <span class="checkmark"></span>
+                                <span class="terms-text">
+                                    Send me updates about EduProject features and academic resources
+                                </span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large btn-full purchase-btn" id="purchase-btn">
+                            Start Free Trial
+                        </button>
+                        
+                        <div class="purchase-security-info">
+                            <div class="security-badges">
+                                <span class="security-item">🔒 256-bit SSL</span>
+                                <span class="security-item">🛡️ PCI Compliant</span>
+                                <span class="security-item">✅ FERPA Ready</span>
+                            </div>
+                            <p class="security-text">Your information is secure and protected</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Contact -->
+    <section class="purchase-support">
+        <div class="container">
+            <div class="support-content">
+                <h3>Need help with your purchase?</h3>
+                <p>Our academic specialists are here to help you choose the right plan for your university.</p>
+                <div class="support-options">
+                    <a href="tel:1-800-EDU-PROJ" class="support-link">
+                        <span class="support-icon">📞</span>
+                        <span>Call (800) 338-7765</span>
+                    </a>
+                    <a href="mailto:sales@eduproject.com" class="support-link">
+                        <span class="support-icon">✉️</span>
+                        <span>Email Sales Team</span>
+                    </a>
+                    <a href="chat.html" class="support-link">
+                        <span class="support-icon">💬</span>
+                        <span>Live Chat</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
